@@ -11,6 +11,7 @@
     "@babel/runtime": "^7.5.5",
     "aws-sdk": "^2.6.9",
     "bluebird": "^3.4.6",
+    "html-pdf": "^2.2.0",
     "mkdirp": "^0.5.1",
     "node-uuid": "^1.4.7",
     "pdf-merge": "0.0.4",

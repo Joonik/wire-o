@@ -19,7 +19,7 @@ service: wire-o # NOTE: update this with your service name
 custom: ${file(./wire-o.yml)}
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs12.x
   profile: default
   iamRoleStatements:
     - Effect: Allow
@@ -105,9 +105,4 @@ functions:
 #       Description: "Description for the output"
 #       Value: "Some output value"
 
-resources:
-  Resources:
-    mergedPDFs:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: ${self:custom.s3BucketName}
+

@@ -5,16 +5,18 @@
   "scripts": {
     "build": "babel lib --out-dir dist",
     "test": "mocha --compilers js:@babel/register --timeout 5000",
-    "deploy": "babel lib --out-dir dist && serverless deploy"
+    "deploy": "(babel lib --out-dir dist && cp -r fonts templates dist) && serverless deploy"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "aws-sdk": "^2.6.9",
-    "bluebird": "^3.4.6",
+    "bluebird": "^3.7.2",
+    "handlebars": "^4.7.6",
     "html-pdf": "^2.2.0",
     "mkdirp": "^0.5.1",
     "node-uuid": "^1.4.7",
     "pdf-merge": "0.0.4",
+    "phantomjs-prebuilt": "^2.1.16",
     "promisify": "0.0.3",
     "request": "^2.74.0",
     "request-promise": "^4.1.1"

@@ -10,27 +10,32 @@ describe('createSummaries module', function () {
 		{
 			name:'daniel Rodriguez Vergara',
 			university:"Boston",
-			graduation_date:'Oct 2019'
+			graduation_date:'Oct 2019',
+			link:'<a href="https://www.google.com">Resume link</a>'
 		},
 		{
 			name:'Jose',
 			university:"Wichita",
-			graduation_date:'Oct 2018'
+			graduation_date:'Oct 2018',
+			link:'<a href="https://www.google.com">Resume link</a>'
 		},
 		{
 			name:'Simon',
 			university:"Texas",
-			graduation_date:'Oct 2017'
+			graduation_date:'Oct 2017',
+			link:'<a href="https://www.google.com">Resume link</a>'
 		},
 		{
 			name:'Rogelio',
 			university:"Miami",
-			graduation_date:'Oct 2010'
+			graduation_date:'Oct 2010',
+			link:'<a href="https://www.google.com">Resume link</a>'
 		},
 		{
 			name:'daniel Rodriguez Vergara',
 			university:"Houston",
-			graduation_date:'Oct 2015'
+			graduation_date:'Oct 2015',
+			link:'<a href="https://www.google.com">Resume link</a>'
 		}
 
 	]

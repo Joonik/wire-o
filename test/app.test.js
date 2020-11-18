@@ -20,7 +20,50 @@ describe('app', function () {
         }
       };
 
-      const params = { body: { pdfUrls: ['https://s3.amazonaws.com/superglue/PCAH_PDF_TEMPLATE.pdf'] }};
+      const params = { 
+        body: {
+          "applicants":[
+          
+              {
+                "name":"daniel Rodriguez Vergara",
+                "university":"Boston",
+                "graduation_date":"Oct 2019",
+                "link":"<a href='https://www.google.com'>Resume link</a>"
+              },
+              {
+                "name":"Jose",
+                "university":"Wichita",
+                "graduation_date":"Oct 2018",
+                "link":"<a href='https://www.google.com'>Resume link</a>"
+              },
+              {
+                "name":"Simon",
+                "university":"Texas",
+                "graduation_date":"Oct 2017",
+                "link":"<a href='https://www.google.com'>Resume link</a>"
+              },
+              {
+                "name":"Rogelio",
+                "university":"Miami",
+                "graduation_date":"Oct 2010",
+                "link":"<a href='https://www.google.com'>Resume link</a>"
+              },
+              {
+                "name":"daniel Rodriguez Vergara",
+                "university":"Houston",
+                "graduation_date":"Oct 2015",
+                "link":"<a href='https://www.google.com'>Resume link</a>"
+              }
+            ],
+                
+            "pdfUrls":[
+                  "https://local-adventis.s3.amazonaws.com/opportunity/7376/resume_7.pdf",
+                  "https://local-adventis.s3.amazonaws.com/opportunity/7360/resume_7.pdf",
+                  "https://local-adventis.s3.amazonaws.com/opportunity/852/resume_7.pdf"		
+                ]
+          }
+      
+      };
 
       AWS.S3.prototype.upload = sinon.stub().returns(s3promise);
 

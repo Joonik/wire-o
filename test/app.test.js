@@ -22,6 +22,15 @@ describe('app', function () {
 
       const params = { 
         body: {
+			"opportunity": {
+				"id": 7,
+				"account": "Wells Fargo",
+				"type_of_opportunity": "Internship Position",
+				"job_title": "Testing Appplication",
+				"slug": "testing-appplication",
+				"application_deadline": "Nov 30,2020",
+				"updated_at": "2020-11-15 05:12:19"
+			},
 			"pdfUrls": [
 				"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/852\/resume_1.pdf",
 				"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7360\/resume_7.pdf",

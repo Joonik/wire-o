@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: wire-o # NOTE: update this with your service name
+service: email-result-pdf # NOTE: update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -21,6 +21,9 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: default
+  apiGateway:
+    binaryMediaTypes:
+      -"*/*"
   iamRoleStatements:
     - Effect: Allow
       Action:

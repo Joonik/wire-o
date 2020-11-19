@@ -5,7 +5,7 @@
   "scripts": {
     "build": "babel lib --out-dir dist",
     "test": "mocha --compilers js:@babel/register --timeout 5000",
-    "deploy": "(babel lib --out-dir dist && cp -r fonts templates dist) && serverless deploy"
+    "deploy": "(babel lib --out-dir dist && cp -r fonts dist) && serverless deploy"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",

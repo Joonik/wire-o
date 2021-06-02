@@ -23,79 +23,124 @@ describe('app', function () {
 
 			const params = {
 				body: {
-					"opportunity_overview_template": "<div class=\"info-card\">\n\t<h3 class=\"title__application\">Basic Information<\/h3>\n\t<div class=\"row basic_info\">\n\t\t<div class=\"col-md-6\">\n\t\t\t<strong>Organization<\/strong>\n\t\t\t<p class=\"field-item\">Wells Fargo<\/p>\n\t\t<\/div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<strong>Type of Opportunity<\/strong>\n\t\t\t<p class=\"field-item\">Internship Position<\/p>\n\t\t<\/div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<strong>Organization Contact Name<\/strong>\n\t\t\t<p class=\"field-item\">Alexandra Lantero<\/p>\n\t\t<\/div>\n\t\t<div class=\"col-md-6\">\n\t\t\t<strong>Organization Contact Email<\/strong>\n\t\t\t<p class=\"field-item\">alantero@sandiego.edu<\/p>\n\t\t<\/div>\n\t<\/div>\n\t<h3 class=\"title__application\">Opportunity Information<\/h3>\n\t\t<div class=\"row basic_info\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Job Title<\/strong>\n\t\t\t\t\t<p class=\"field-item\">Testing Appplication<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Industry<\/strong>\n\t\t\t\t\t<p class=\"field-item\">Wealth Management <\/p>\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Job Description<\/strong>\n\t\t\t\t\t<p class=\"field-item\">J.P. Morgan is a global leader in financial services, offering solutions to the world's most important corporations, governments and institutions in more than 100 countries. As announced in early 2018, JPMorgan Chase will deploy $1.75 billion in philanthropic capital around the world by 2023. We also lead volunteer service activities for employees in local communities by utilizing our many resources, including those that stem from access to capital, economies of scale, global reach and expertise.<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Firm Overview<\/strong>\n\t\t\t\t\t<p class=\"field-item\">J.P. Morgan is a global leader in financial services, offering solutions to the world's most important corporations, governments and institutions in more than 100 countries. As announced in early 2018, JPMorgan Chase will deploy $1.75 billion in philanthropic capital around the world by 2023. We also lead volunteer service activities for employees in local communities by utilizing our many resources, including those that stem from access to capital, economies of scale, global reach and expertise.<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Location<\/strong>\n\t\t\t\t\t<p class=\"field-item\">New York City, NY<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Application Deadline<\/strong>\n\t\t\t\t\t<p class=\"field-item\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tNov 30, 2020\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t<strong>Internship Type<\/strong>\n\t\t\t\t\t\t<p class=\"field-item\">\n\t\t\t\t\t\t<span>Summer 2021<\/span>, <span>Winter 2021<\/span>, <span>Spring 2022<\/span>\t\t\t\t\t\t<\/p>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t<strong>Remote\/In-Person<\/strong>\n\t\t\t\t\t<p class=\"field-item\">In-Person<\/p>\n\t\t\t\t<\/div>\n\t\t\t\t\t\t\n\t\t<\/div>\n\t\t\n\t\t<h3 class=\"title__application\">Opportunity Criteria<\/h3>\n\t\t<div class=\"row basic_info\">\n\t\t\t<div class=\"col-md-2\">\n\t\t\t\t<strong>Candidate Type<\/strong>\n\t\t\t\t<p class=\"field-item\">\n\t\t\t\t\tSophomore\t\t\t\t\t\n\t\t\t\t<\/p>\n\t\t\t<\/div>\n\t\t\t<div class=\"col-md-4\">\n\t\t\t\t<strong>Definition<\/strong>\n\t\t\t\t<p class=\"field-item\">\n\t\t\t\t\tGraduates between Jul 1, 2022 and Jun 30, 2023\n\t\t\t\t<\/p>\n\t\t\t<\/div>\n\t\t\t\n\t\t\t<div class=\"col-md-6\">\n\t\t\t\t<strong>Certification Requirement<\/strong>\n\t\t\t\t<p class=\"field-item\">FMC Level I Certification<\/p>\n\t\t\t<\/div>\n\t\t<\/div>\n\n\n<\/div>",
+					"opportunity_overview_template": "<div class=\"info-card\">\r\n\t<h3 class=\"title__application\">Basic Information<\/h3>\r\n\t<div class=\"row basic_info\">\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<strong>Organization<\/strong>\r\n\t\t\t<p class=\"field-item\">Credit Agricole Corporate and Investment Bank<\/p>\r\n\t\t<\/div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<strong>Type of Opportunity<\/strong>\r\n\t\t\t<p class=\"field-item\">Full-Time Position<\/p>\r\n\t\t<\/div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<strong>Organization Contact Name<\/strong>\r\n\t\t\t<p class=\"field-item\">David Lewicki<\/p>\r\n\t\t<\/div>\r\n\t\t<div class=\"col-md-6\">\r\n\t\t\t<strong>Organization Contact Email<\/strong>\r\n\t\t\t<p class=\"field-item\">david.lewicki@adventiscg.com<\/p>\r\n\t\t<\/div>\r\n\t<\/div>\r\n\t<h3 class=\"title__application\">Opportunity Information<\/h3>\r\n\t\t<div class=\"row basic_info\">\r\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Job Title<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">Associate<\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Industry<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">Investment Banking <\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Job Description<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">Crédit Agricole S.A. is a global financial institution based in France with over $2.1 trillion in total assets. The Bank offers a full range of services that include retail banking, corporate & investment banking, asset management, insurance, and numerous others. Crédit Agricole Corporate & Investment Bank (“CA-CIB”), a wholly owned subsidiary, provides capital markets, investment banking, and corporate banking services worldwide.< br \/>\r\n<br \/>\r\nCrédit Agricole Corporate & Investment Bank’s Chicago Office is responsible for executing transactions on behalf of multinational clients headquartered in the U.S.Our clients include public and private companies with a large international presence and annual revenues generally in excess of $1.0 billion.Transactions executed on behalf of clients include but are not limited to strategic and financial advisory, syndicated debt, bond\/equity issuances, foreign exchange \/ interest rate derivatives, securitization, trade finance and structured transactions.<br \/>\r\n<br \/>\r\nOne of the Chicago banking teams (covering agriculture & food, engineering & construction, and diversified) is seeking an experienced hire to assist senior bankers in the management of client relationships. The ideal candidate will demonstrate I) strong initiative and the ability to work well under pressure, II) ability to manage numerous assignments at once, III) resourcefulness and independence, IV) professional demeanor, and V) strong interpersonal and communication skills. In addition, the candidate should have an understanding of finance \/ accounting fundamentals, credit analysis, financial statement analysis, modeling, and valuation.<br \/>\r\n<br \/>\r\nKey Responsibilities<br \/>\r\n<br \/>\r\n• Provide Origination\/Client Coverage support to Senior and Junior Bankers.<br \/>\r\n• Develop an in-depth understanding of the Credit Agricole Group’s product offering and network as well as an understanding of how the Bank’s products and network apply to the Team’s clients and prospects.<br \/>\r\n• Prepare pitch books for client and internal presentations.< br \/>\r\n• Prepare briefing memos for client visits and for internal presentations\/committees.<br \/>\r\n• Prepare financial models and pro forma capital structures for idea generation and client visits.<br \/>\r\n• Learn the fundamentals of financial and strategic analysis.<br \/>\r\n• Maintain global control over revenue budgets for each primary coverage client and support Senior Bankers in managing revenue budgets for all other Team clients.<br \/>\r\n• Develop an in-depth understanding of clients’ and prospects’ strategies and business models.<br \/>\r\n• Manage credit request and approval process for new transactions, amendments and annual reviews.<br \/>\r\n• Liaise with product groups and international counterparts to ensure approvals are received in a timely manner.<br \/>\r\n• Monitor and ensure compliance with all Know Your Customer requirements, internal monitoring requirements, portfolio reviews, etc.<br \/>\r\n• Analyze risk\/return metrics on all stand-alone transactions and client relationships.<br \/>\r\n• Cultivate and upgrade prospect list for future client development.<\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Firm Overview<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\"><\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Location<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">Chicago, IL<\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Application Deadline<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tFeb 28, 2021\r\n\t\t\t\t\t\t\t\t\t\t\t<\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t\t<strong>Start Date<\/strong>\r\n\t\t\t\t\t\t<p class=\"field-item\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJul 1, 2021\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<\/p>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t\t<strong>Remote\/In-Person<\/strong>\r\n\t\t\t\t\t<p class=\"field-item\">In-Person<\/p>\r\n\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\r\n\t\t<\/div>\r\n\t\t\r\n\t\t<h3 class=\"title__application\">Opportunity Criteria<\/h3>\r\n\t\t<div class=\"row basic_info\">\r\n\t\t\t<div class=\"col-md-2\">\r\n\t\t\t\t<strong>Candidate Type <\/strong>\r\n\t\t\t\t<p class=\"field-item\">\r\n\t\t\t\t\tSenior\t\t\t\t\t\r\n\t\t\t\t<\/p>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-md-4\">\r\n\t\t\t\t<strong>Definition<\/strong>\r\n\t\t\t\t<p class=\"field-item\">\r\n\t\t\t\t\tGraduates between Jul 1, 2020 and Jun 30, 2021\r\n\t\t\t\t<\/p>\r\n\t\t\t<\/div>\r\n\t\t\t\r\n\t\t\t<div class=\"col-md-6\">\r\n\t\t\t\t<strong>Certification Requirement<\/strong>\r\n\t\t\t\t<p class=\"field-item\">FMC Level II Certification<\/p>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\r\n\r\n<\/div>",
 					"store": false,
 					"opportunity": {
-						"id": 7,
-						"account": "Wells Fargo",
-						"type_of_opportunity": "Internship Position",
-						"job_title": "Testing Appplication",
-						"slug": "testing-appplication",
-						"application_deadline": "Nov 30,2020",
-						"updated_at": "2020-11-15 05:12:19"
+						"id": 15,
+						"account": "Credit Agricole Corporate and Investment Bank",
+						"type_of_opportunity": "Full-Time Position",
+						"certification_id": 2,
+						"job_title": "Associate",
+						"slug": "associate",
+						"application_deadline": "Feb 28,2021",
+						"updated_at": "2021-02-16 17:08:49"
 					},
 					"pdfUrls": [
-						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/852\/resume_7.pdf",
-						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7360\/resume_7.pdf",
-						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7376\/resume_7.pdf",
-						"https:\/\/local-adventis.s3.amazonaws.com\/users\/7311\/resume.pdf",
-						"https:\/\/local-adventis.s3.amazonaws.com\/users\/7285\/resume.pdf"
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/267\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/6731\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/users\/618\/resume.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7160\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/6349\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/4409\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7455\/resume_15.pdf",
+						"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/5960\/resume_15.pdf"
 					],
 					"applicants": [
 						{
-							"Full Name": "Luke Wilcox",
-							"Undergraduate University": "Babson College",
+							"Full Name": "John (Jack) Adee",
+							"Undergraduate University": "Iowa State University",
 							"Expected Undergraduate Graduation Date": "May 2021",
-							"Edu Email": "lwilcox1@babson.edu",
-							"Personal Email": "lukewilcox01@gmail.com",
-							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/lukewilcox01\" target=\"_blank\">link<\/a>",
-							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/852\/resume_7.pdf\" target=\"_blank\">resume<\/a>",
-							"FMC Level I Certification Date": "Apr 10, 2018",
-							"Message": "Dear Hiring Manager,\r\n\r\nI am very interested in pursuing an employment opportunity with Insight Partners as an Onsite Analyst. My financial, analytical, and interpersonal skills would be a great fit for your company. I have high regard for your stellar reputation in the industry. As a Finance and Real Estate student at Lehigh University, I am eager to engage with a company that has such a strong commitment to creating a positive company culture and prominent position in this very competitive market.\r\n \r\nEqually innovative and strategic in my approach to tackling problems, I\u2019ve never met a challenge that did not intrigue me. As a first-year at Lehigh, I led a small team of talented entrepreneurs in a highly selective competition where we created a product and presented it to potential investors. Our group ended up receiving a small donation from an investor to continue pursing our product and ideas. \r\n \r\nTireless and relentless, I like to think that one of my greatest assets is my vitality. Last summer I interned at Savills, a Real Estate Company, where I had the opportunity to work with industry professionals to experience real-world valuation and marketing of high-end commercial properties. Also, I was a part of the management team at BLADE Urban Air Mobility Inc., a technology-powered, short-distance Aviation Company, where I was responsible for scheduling, supervising, and organizing flights for hundreds of discerning clients. \r\n\r\nAn avid learner, I received my certification in Financial Modeling from Adventis where I built a three-statement, fully circular, and properly formatted financial model in excel in under 90 minutes. I was proud to earn a grade in the top 5% of my class which highlights my mastery of key concepts in financial modeling, accounting, and corporate finance. Currently, I am also in the process of receiving SIE certification.\r\n \r\nI am currently exploring job opportunities where my analytical skills, proven leadership experience, and strong interpersonal skills can add immediate value. I am beyond excited at the prospect of working with Insight Partners. Please do not hesitate to reach out with any questions, and I will plan to follow up to discuss the next steps.\r\n \r\nThank you in advance for your time and consideration.\r\n \r\nSincerely,\r\n \r\nJohn Schaaf"
+							"Edu Email": "jpadee@iastate.edu",
+							"Personal Email": "jack.adee@aol.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/jack-adee-6371a0154\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/267\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "May 21, 2018",
+							"Message": "I believe I would be a great fit for Credit Agricole as I am Adventis Level I and II certified and have previous investment banking experience. I would love the opportunity to further discuss the position! Thank you for your time."
 						},
 						{
-							"Full Name": "Justin Holt",
-							"Undergraduate University": "University of Alabama",
-							"Expected Undergraduate Graduation Date": "May 2022",
-							"Edu Email": "jkholt1@crimson.ua.edu",
-							"Personal Email": "jkholt1@crimson.ua.edu",
-							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/daniel-rodriguez-ab3607165\/\" target=\"_blank\">link<\/a>",
-							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7360\/resume_7.pdf\" target=\"_blank\">resume<\/a>",
-							"FMC Level I Certification Date": null,
-							"Message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, architecto ipsam! Sit, earum ducimus dolorum consectetur nemo labore rerum quisquam aliquid, beatae in incidunt commodi. Voluptate necessitatibus iusto doloribus quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, architecto ipsam! Sit, earum ducimus dolorum consectetur nemo labore rerum quisquam aliquid, beatae in incidunt commodi. Voluptate necessitatibus iusto doloribus quod."
-						},
-						{
-							"Full Name": "Andrew Donoghhue",
-							"Undergraduate University": "College of New Jersey",
+							"Full Name": "Raven Slim",
+							"Undergraduate University": "University of Illinois at Urbana-Champaign",
 							"Expected Undergraduate Graduation Date": "May 2021",
-							"Edu Email": "donogha2@tcnj.edu",
-							"Personal Email": "",
-							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/andrew-donoghue-895858174\/\" target=\"_blank\">link<\/a>",
-							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7376\/resume_7.pdf\" target=\"_blank\">resume<\/a>",
-							"FMC Level I Certification Date": null,
-							"Message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores eligendi nostrum iusto laudantium necessitatibus aliquid reprehenderit provident quibusdam, tempore delectus sequi? Reiciendis eligendi molestias deleniti blanditiis inventore ipsum earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores eligendi nostrum iusto laudantium necessitatibus aliquid reprehenderit provident quibusdam, tempore delectus sequi? Reiciendis eligendi molestias deleniti blanditiis inventore ipsum earum!"
+							"Edu Email": "rslim2@illinois.edu",
+							"Personal Email": "raven.slim@yahoo.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/raven-slim\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/6731\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Jun 9, 2020",
+							"Message": "I would greatly appreciate having the opportunity to be considered for this role. I am driven to learn and have a high level of intellectual curiosity. Along with my qualities, I believe my internship background would go well with the candidate you are seeking."
 						},
 						{
-							"Full Name": "Celeste Diaz",
-							"Undergraduate University": "DePaul University",
-							"Expected Undergraduate Graduation Date": "Aug 2020",
-							"Edu Email": "CDIAZ58@depaul.edu",
-							"Personal Email": "celestediaz3@gmail.com",
-							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/daniel-rodriguez-ab3607165\/\" target=\"_blank\">link<\/a>",
-							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/users\/7311\/resume.pdf\" target=\"_blank\">resume<\/a>",
-							"FMC Level I Certification Date": null,
-							"Message": "Dear Hiring Manager,\r\n\r\nI am very interested in pursuing an employment opportunity with Insight Partners as an Onsite Analyst. My financial, analytical, and interpersonal skills would be a great fit for your company. I have high regard for your stellar reputation in the industry. As a Finance and Real Estate student at Lehigh University, I am eager to engage with a company that has such a strong commitment to creating a positive company culture and prominent position in this very competitive market.\r\n \r\nEqually innovative and strategic in my approach to tackling problems, I\u2019ve never met a challenge that did not intrigue me. As a first-year at Lehigh, I led a small team of talented entrepreneurs in a highly selective competition where we created a product and presented it to potential investors. Our group ended up receiving a small donation from an investor to continue pursing our product and ideas. \r\n \r\nTireless and relentless, I like to think that one of my greatest assets is my vitality. Last summer I interned at Savills, a Real Estate Company, where I had the opportunity to work with industry professionals to experience real-world valuation and marketing of high-end commercial properties. Also, I was a part of the management team at BLADE Urban Air Mobility Inc., a technology-powered, short-distance Aviation Company, where I was responsible for scheduling, supervising, and organizing flights for hundreds of discerning clients. \r\n\r\nAn avid learner, I received my certification in Financial Modeling from Adventis where I built a three-statement, fully circular, and properly formatted financial model in excel in under 90 minutes. I was proud to earn a grade in the top 5% of my class which highlights my mastery of key concepts in financial modeling, accounting, and corporate finance. Currently, I am also in the process of receiving SIE certification.\r\n \r\nI am currently exploring job opportunities where my analytical skills, proven leadership experience, and strong interpersonal skills can add immediate value. I am beyond excited at the prospect of working with Insight Partners. Please do not hesitate to reach out with any questions, and I will plan to follow up to discuss the next steps.\r\n \r\nThank you in advance for your time and consideration.\r\n \r\nSincerely,\r\n \r\nJohn Schaaf"
+							"Full Name": "Anthony Mershad",
+							"Undergraduate University": "Miami University",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "mershaae@miamioh.edu",
+							"Personal Email": "amershad1998@gmail.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/anthony-mershad\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/users\/618\/resume.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Aug 19, 2019",
+							"Message": "Credit Agricole  would provide me with an opportunity in a field that I am very passionate about. I am confident that I can exceed expectations here due to my skillsets and mentality, as I certainly have a good mix of technical and interpersonal skills needed for this position. As for Chicago, Illinois, I have some ties to the area and love the city. This opportunity would be a great kickstart to my career once I graduate and I can promise my full loyalty and dedication to the company. Looking forward to connecting further!"
 						},
 						{
-							"Full Name": "Domingo Joaquin",
-							"Undergraduate University": "Michigan State University",
-							"Expected Undergraduate Graduation Date": "May 1996",
-							"Edu Email": "dcjoaqu@ilstu.edu",
-							"Personal Email": "",
-							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/daniel-rodriguez-ab3607165\/\" target=\"_blank\">link<\/a>",
-							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/users\/7285\/resume.pdf\" target=\"_blank\">resume<\/a>",
-							"FMC Level I Certification Date": null,
-							"Message": "Also got this error. I was able to work around it by changing my node version from v8.15 to v8.10. Not exactly the best fix, but it will allow you to get your work done."
+							"Full Name": "Henry Wayne",
+							"Undergraduate University": "University of San Diego",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "henrywayne@sandiego.edu",
+							"Personal Email": "henrywayne3599@gmail.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/henry-wayne\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7160\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Dec 21, 2020",
+							"Message": "My name is Henry Wayne and I am a senior on track to graduate magna cum laude this May with a double major in finance and real estate from the University of San Diego. I am very interested in pursuing a career in investment banking and I am seeking more information about potential opportunities at Credit Agricole. What really intrigues me about this position is the ability to grow my skills working at a leading global investment banking, getting great exposure and being able to bring value to the firm. Over the past few years, I have developed a strong passion for banking. Participating in a virtual internship this past summer at a middle market bank called BTIG, I was able to grow this passion and experience how a bank truly operates. I got an understanding of a banker’s work ethic and I believe I have the traits necessary to become one. I am a very quick study who is eager to learn and I am very easy to work with. If given the opportunity, I believe I would be a great addition. I look forward to hearing from you soon. \r\n\r\nBest, \r\nHenry"
+						},
+						{
+							"Full Name": "Grant Aguirre",
+							"Undergraduate University": "University of Illinois at Urbana-Champaign",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "gaguir9@illinois.edu",
+							"Personal Email": "gea717@gmail.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/gaguir9\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/6349\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 1,
+							"FMC Level II Certification Date": null,
+							"Message": "Dear Crédit Agricole CIB,\r\nI write to apply for the Associate Opportunity. I graduate in May 2021 from the Gies College of Business at the University of Illinois at Urbana-Champaign. I was introduced to the firm by the Adventis Financial Modelling program where I earned my FMC Level I Certification. \r\nAfter exploring the history of the firm, I see how Crédit Agricole has taken initiative in financing social and environmental projects around the world. This makes me exited to work there after graduation.\r\nI have previously completed an internship at the University of Illinois Foundation endowment. Through this experience I observed how investment managers develop and execute their investment strategies. As an investment banker, I will be better able to understand the needs of investors. I also held an internship at PricewaterhouseCoopers as a START intern which honed my skills in working in a small team environment at a Big 4 accounting firm.\r\nGiven my background in accounting and finance internships, I am a particularly good fit for the Associate Opportunity position at Crédit Agricole. Further, I am impressed by the firm’s ability to pioneer social and environmental change which compels me to hold a fulfilling career there. \r\nI look forward to interviewing with Crédit Agricole CIB. For further communication, please email gaguir9@illinois.edu or call me on my cellphone at (224) 717-9338.\r\nSincerely,\r\nGrant Aguirre"
+						},
+						{
+							"Full Name": "Matthew Lencioni",
+							"Undergraduate University": "Bentley University",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "lencion_matt@bentley.edu",
+							"Personal Email": "mrlenc7@gmail.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/matthew-lencioni-b2a958156\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/4409\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Mar 6, 2019",
+							"Message": "Hello,\r\n\r\nMy name is Matthew Lencioni and I am a senior student-athlete at Bentley University who received my BS in Corporate Finance & Accounting in December and will obtain my MS in Finance in May 2021. I am looking for a full-time position as an investment banking analyst. Credit Agricole’s commitment to sustainability and providing innovative solutions for clients is impressive and drives my interest in the firm.\r\n\r\nI have attended Adventis' financial modeling boot camp, learning how to build a variety of models such as a three-statement model, public comps, precedent transactions, DCF and an LBO, and earned their Level 2 certification. I have three years of summer internship experience in investment banking, wealth management and accounting. Other strengths of mine include effective teamwork, keen attention to detail, a positive attitude and a strong work ethic.\r\n\r\nAdditional examples of my qualifications are highlighted in my resume.I would love the opportunity to talk with a recruiter to discuss how my skills and interests can meet the goals of Credit Agricole.Please feel free to reach me at 248-977 - 6342."
+						},
+						{
+							"Full Name": "Pablo Gabilondo",
+							"Undergraduate University": "University of San Diego",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "pgabilondo@sandiego.edu",
+							"Personal Email": "pablogabilondolarrea@hotmail.es",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/gabilondopablo\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/7455\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Feb 22, 2021",
+							"Message": "Dear Hiring Manager:\r\n\r\nIt is with great professional enthusiasm that I approach Credit Agricole Corporate and Investment Bank with the goal of exploring entry-level opportunities, such as the Associate opening posted at Aventis. Soon to be equipped with a bachelor’s degree in Business Administration, Minor in Analytics from University of San Diego (expected May 2021), I am well-prepared to align my skill set with any position that requires a proactive individual who strives to exceed expectations on every assignment.\r\n\r\nMy resume is enclosed for your review; highlights include:\r\n\tEfficiently supported finance department by accurately filing, archiving, and updating financial records as Finance Intern for GRUPO GAES.\r\n\tSaved 2% of cash expenditure by administering effective cost control measures and analyzing company’s accounts.\r\n\tBuilt a fully circular, formatted financial model and LBO from scratch, and finalized valuation analysis including public comparables, precedent comparables, and discounted cash flow in fulfillment of requirements for Financial Modeling Certification(FMC).\r\n\r\nIn addition, I possess outstanding time - management skills and work well in team - driven environments.You will find me to be a highly productive individual, quick to grasp essential procedures and protocols, and possessing the stamina to do whatever it takes to complete the task set before me.\r\n\r\nShould these characteristics and a solid work ethic be a good fit with your company, I would look forward to an opportunity to discuss my qualifications in detail.Until then, thank you for your time and consideration.\r\n\r\nSincerely, \r\n\r\nPablo Gabilondo"
+						},
+						{
+							"Full Name": "Patrick Carousso",
+							"Undergraduate University": "University of Michigan - Ann Arbor",
+							"Expected Undergraduate Graduation Date": "May 2021",
+							"Edu Email": "pcar@umich.edu",
+							"Personal Email": "phwcarouss0@yahoo.com",
+							"LinkedIn": "<a href=\"https:\/\/www.linkedin.com\/in\/patrick-carousso-19a091157\/\" target=\"_blank\">link<\/a>",
+							"Resume": "<a href=\"https:\/\/local-adventis.s3.amazonaws.com\/opportunity\/5960\/resume_15.pdf\" target=\"_blank\">resume<\/a>",
+							"FMC Certification Level": 2,
+							"FMC Level II Certification Date": "Apr 21, 2020",
+							"Message": "I believe that I am a great candidate for this position and am excited by the opportunity. My experience crafting a go-to-market strategy for a technology company and working as a venture capital consultant will prove useful for this position. I have the experience of doing deep industry research to find target markets, target customers, classify product types (medical device classification in the case of Metamaterial), navigate regulation processes (FDA clearance process in the case of Metamaterial), and recommend distribution channels. Working as a venture capital consultant also provided me relevant experience, pushing me to think using an investor's mindset when advising Circadian Risk, building its Series A Pitch Deck, and pitching to an investor panel(VC, PE and Angel investors).I have also benefited greatly from my experience in navigating the venture capital investment process and have had exposure to analyzing the factors that inform an investment decision.These experiences will help me make a smooth transition into the work environment and bring immediate value to Credit Agricole."
 						}
 					]
 				}
